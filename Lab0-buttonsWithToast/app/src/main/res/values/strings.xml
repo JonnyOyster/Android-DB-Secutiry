@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HelloButtons</string>
+    <string name="firstHint">Enter first line here</string>
+    <string name="secondHint">Enter second line here</string>
+    <string name="buttonLabel">Press me :)</string>
+    <string name="toastMain">You just entered:</string>
+    <string name="greetings">Hello, this is my Android app</string>
+    <string name="fileHint">Enter file name to save</string>
+</resources>
