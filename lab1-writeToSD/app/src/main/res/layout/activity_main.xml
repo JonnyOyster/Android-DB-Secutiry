@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.knyaseff.lab1_writetosd.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Absolute:"
+        android:id="@+id/absoluteField"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:id="@+id/nameField"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/absoluteField"
+        android:layout_alignEnd="@+id/absoluteField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Path:"
+        android:id="@+id/pathField"
+        android:layout_below="@+id/nameField"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/nameField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read / Write:"
+        android:id="@+id/readWriteField"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pathField"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="External:"
+        android:id="@+id/externalField"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/readWriteField"
+        android:layout_alignEnd="@+id/readWriteField" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Files Dir"
+        android:id="@+id/getFilesDirBtn"
+        android:layout_below="@+id/externalField"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Cache Dir"
+        android:id="@+id/getCacheDirBtn"
+        android:layout_below="@+id/getFilesDirBtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get External Files Dir"
+        android:id="@+id/getExternalFilesDirBtn"
+        android:layout_below="@+id/getCacheDirBtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get External Cache Dir"
+        android:id="@+id/getExternalCacheDirBtn"
+        android:layout_below="@+id/getExternalFilesDirBtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get External Storage Directory"
+        android:id="@+id/getExternalStorageDirBtn"
+        android:layout_below="@+id/getExternalCacheDirBtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get External Public Storage Directory"
+        android:id="@+id/getExternalPublicStorageDirBtn"
+        android:layout_below="@+id/getExternalStorageDirBtn"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
