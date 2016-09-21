@@ -113,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void readFromFile(String filename) {
         final TextView txt = (TextView) findViewById(R.id.readFromFileLabel);
-        //File f = new File(super.getFilesDir(), filename);
         try {
             Context context = getApplicationContext();
             FileInputStream fis = context.openFileInput(filename);
