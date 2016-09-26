@@ -4,10 +4,10 @@ package knyaseff.net.lab3_hashtable;
  * Created by kvpshka on 19.09.2016.
  */
 public class HashTable {
-    String keyString;
-    String value;
-    int positionOfRelative;
-    int key;
+    private String keyString;
+    private String value;
+    private int positionOfRelative;
+    private int key;
 
 
     private HashTable() {}
