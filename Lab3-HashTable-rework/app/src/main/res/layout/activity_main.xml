@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.knyaseff.lab3_hashtable_rework.MainActivity">
+
+    <TextView
+        android:text="Key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/keyLabel1"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/keyLabel1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:maxLength="5"
+        android:id="@+id/keyInputField"
+        android:layout_alignParentEnd="true"
+        android:inputType="text"
+        android:hint="Enter key to add here" />
+
+    <TextView
+        android:text="Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/keyInputField"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/valueLabel1"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_marginTop="18dp"
+        android:maxLength="10"
+        android:id="@+id/valueInputField"
+        android:layout_below="@+id/valueLabel1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Enter value to add here" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueInputField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/buttonAdd" />
+
+    <TextView
+        android:text="Key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/keyLabel2"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/keyLabel2"
+        android:maxLength="5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/keyOutputField"
+        android:layout_alignParentEnd="true"
+        android:hint="Enter key to search " />
+
+    <TextView
+        android:text="Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:id="@+id/valueLabel2"
+        android:layout_below="@+id/keyOutputField"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/valueLabel2"
+        android:layout_alignParentStart="true"
+        android:maxLength="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/valueOutputField"
+        android:layout_alignParentEnd="true"
+        android:inputType="text"
+        android:hint="There will be value" />
+
+    <Button
+        android:text="Read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRead"
+        android:layout_below="@+id/valueOutputField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+</RelativeLayout>
