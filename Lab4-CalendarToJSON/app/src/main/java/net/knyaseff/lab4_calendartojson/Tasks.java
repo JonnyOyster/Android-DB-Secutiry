@@ -14,11 +14,13 @@ public class Tasks {
         listOfTasks = new ArrayList<>();
     }
 
+    public Tasks () {}
+
     public Tasks(ArrayList<Task> listOfTasks) {
         this.listOfTasks = listOfTasks;
     }
 
-    public ArrayList<Task> getListOfTasks() {
+    public static ArrayList<Task> getListOfTasks() {
         return listOfTasks;
     }
 
