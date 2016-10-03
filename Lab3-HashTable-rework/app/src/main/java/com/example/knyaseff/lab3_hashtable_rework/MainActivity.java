@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    // creating init template of RAF (200 symbols = 400 bytes in UTF-16)
     public void createEmptyTemplate() {
         String astericks = new String(new char[200]).replace('\0', '*');
         try {
